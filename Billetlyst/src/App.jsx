@@ -1,7 +1,7 @@
 import './App.css'
 import {Route, Routes} from 'react-router-dom';
 import Home from './components/Home'
-import EventPage from './components/EventPage'
+import EventPage from './components/EventPage';
 import Dashboard from './components/Dashboard'
 
 function App() {
@@ -9,7 +9,9 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/event/:id" element={<EventPage />} />
+<Route path="/event" element={<EventPage />} />
+<Route path="/event/:id" element={<EventPage />} />
+
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </>

@@ -4,17 +4,22 @@ import Nav from "./Nav";
 
 
 
-const API_KEY = import.meta.env.VITE_API_KEY;
 
+
+function Home() {
+  const [events, setEvents] = useState([]);
+
+  const API_KEY = "ZOKDUNG8B93mixzp5xx29XHsvuvzjLEb";
 const FESTIVALS = [
   "Findings",
   "Neon",
   "Skeikampenfestivalen",
-  "Tons of Rock"
-];
+  "Tons of Rock"];
 
-function Home() {
-  const [events, setEvents] = useState([]);
+
+
+  
+
 
   useEffect(() => {
     Promise.all(
