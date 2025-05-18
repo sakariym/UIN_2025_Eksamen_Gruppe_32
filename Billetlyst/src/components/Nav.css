@@ -1,5 +1,5 @@
 .navbar {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -11,16 +11,18 @@
   z-index: 1000;
 }
 
-/* Left: Logo */
+
 .nav-left {
   flex: 1;
-  display: flex;
-  align-items: center;
+  
 }
 
 .logo {
   font-size: 1.8rem;
   margin: 0;
+  text-decoration: none;
+  font-weight: bold;
+  justify-content: center;
 }
 
 .logo a {
@@ -28,7 +30,7 @@
   text-decoration: none;
 }
 
-/* Center: Links */
+/* Center links*/
 .nav-center {
   flex: 1;
   display: flex;
@@ -49,7 +51,7 @@
   font-weight: bold;
 }
 
-/* Right: Logg Inn */
+/* Right Logg Inn */
 .nav-right {
   flex: 1;
   display: flex;
