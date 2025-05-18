@@ -18,7 +18,7 @@ return (
             </ul>
         </div>
         <div className="nav-right">
-            <Link to ="/Login" className="login-link">Logg Inn</Link>
+            <Link to ="/dashboard" className="login-link">Logg Inn</Link>
         </div>
     </nav>
     );
