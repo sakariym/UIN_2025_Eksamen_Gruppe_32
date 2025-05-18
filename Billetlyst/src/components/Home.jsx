@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Nav from "./Nav";
+
+
 
 const API_KEY = "ZOKDUNG8B93mixzp5xx29XHsvuvzjLEb";
 
@@ -29,6 +32,8 @@ function Home() {
   }, []);
 
   return (
+    <>
+    <Nav/>
     <div>
       <h1>Billettlyst - Festivaler</h1>
       <ul>
@@ -41,7 +46,11 @@ function Home() {
         ))}
       </ul>
     </div>
+    </>
+    
   );
+  
 }
+
 
 export default Home;
