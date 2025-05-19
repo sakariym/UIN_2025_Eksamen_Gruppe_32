@@ -4,6 +4,9 @@ import { useParams, Link } from 'react-router-dom';
 
 const API_KEY = 'ZOKDUNG8B93mixzp5xx29XHsvuvzjLEb';
 
+/* KILDE: Dokumentasjon og eksempler fra React Native + egen tilpasning 
+i denne linken:  https://reactnative.dev/docs/network*/ 
+
 
 function EventPage() {
    
@@ -28,13 +31,20 @@ function EventPage() {
   return (
     <div>
       <h1>{event.name}</h1>
-       <p>Lokasjon:{event._embedded?.venues?.[0]?.name}</p>
         <p>Dato: {event.dates?.start?.localDate}</p>
+       <p>Lokasjon:{event._embedded?.venues?.[0]?.name}</p>
       <p>{event.description || 'Ingen beskrivelse.'}</p>
       <Link to="/">Tilbake til Hjem</Link>
     </div>
+
+    
   );
+
+
+
+
+
+
 }
-/* KILDE: Dokumentasjon og eksempler fra React Native + egen tilpasning 
-i denne linken:  https://reactnative.dev/docs/network*/ 
+
 export default EventPage;
