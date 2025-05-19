@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Nav from "./Nav";
+import EventCard from "./Eventcard";
 
 
 
@@ -39,18 +40,12 @@ const FESTIVALS = [
   return (
     <>
     <Nav/>
-    <div>
       <h1>Billettlyst - Festivaler</h1>
-      <ul>
+      <div className="event-card">
         {events.map(event => (
-          <li key={event.id}>
-            <Link to={`/event/${event.id}`}>
-              {event.name} - {event.dates?.start?.localDate}
-            </Link>
-          </li>
+          <EventCard key={event.id} event={event} />
         ))}
-      </ul>
-    </div>
+      </div>
     </>
     
   );
