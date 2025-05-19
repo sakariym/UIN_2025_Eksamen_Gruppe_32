@@ -3,6 +3,12 @@ Vanskelighetsgrad - C
 Sakariya Adan Mahamud - sakariym
 
 Wihib Abdikarin Fure - Wihibfure
+Kilder: 1. Webtricks Blog. (u.å.). Komponenter og props – Introduksjon til React. Hentet fra https://lms.webtricks.blog/kurs/uin/introduksjon-til-react/komponenter-og-props
+
+2. React. (2023). Lists and keys. Hentet 19. mai 2025 fra https://legacy.reactjs.org/docs/lists-and-keys.html
+
+3. Remix Software. (2024). react-router-dom: Link. Hentet 19. mai 2025 fra https://api.reactrouter.com/v7/functions/react_router.Link.html
+
 
 
 Yassin Mukhtar Ibrahim - yassin1256
