@@ -3,14 +3,16 @@ import React from "react";
 function ArtistCard({ navn, rolle, imageUrl }) {
   return (
     <div style={{
-      border: "1px solid #ccc",
-      borderRadius: "8px",
+      border: "1px solid #e0e0e0",
+      borderRadius: "12px",
       padding: "1rem",
       width: "180px",
       textAlign: "center",
-      boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
-      backgroundColor: "#fff",
-      fontFamily: "Arial, sans-serif"
+      boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+      backgroundColor: "#fafafa",
+      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+      transition: "transform 0.2s ease, box-shadow 0.2s ease",
+      cursor: "pointer",
     }}>
       {imageUrl && (
         <img

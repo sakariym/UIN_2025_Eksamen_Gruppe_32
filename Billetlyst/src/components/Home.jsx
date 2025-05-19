@@ -7,7 +7,6 @@ import ArtistCard from "./ArtistCard";
 
 
 
-
 function Home() {
   const [events, setEvents] = useState([]);
   const [artists, setArtists] = useState([]);
@@ -44,6 +43,8 @@ const FESTIVALS = [
 
 
   return (
+    /*fikk hjelp av AI, ved section delen*/
+
     <>
     <Nav/>
       <h1>Billettlyst - Festivaler</h1>
@@ -51,20 +52,39 @@ const FESTIVALS = [
         {events.map(event => (
           <EventCard key={event.id} event={event} />
         ))}
+        
       </div>
-      <div className="artist-cards">
-  {artists.map(artist => (
-    <ArtistCard
-      navn={artist.name}
-      rollee={artist.classifications?.[0]?.segment?.name || "Artist"}
-      imageUrl={artist.images?.[0]?.url}
-    />
-  ))}
-</div>
+
+      <section>
+  <h2>Artister</h2>
+  <div style={{
+    display: "flex",
+    flexWrap: "wrap",
+    gap: "1rem",
+    justifyContent: "flex-start"
+  }}>
+    {artists.length === 0 ? (
+      <p>Laster artister...</p>
+    ) : (
+      artists.map(artist => (
+        <ArtistCard
+          key={artist.id}
+          navn={artist.name}
+          rolle={artist.classifications?.[0]?.segment?.name || "Artist"}
+          imageUrl={artist.images?.[0]?.url}
+        />
+      ))
+    )}
+  </div>
+</section>
+
+
+
 
     </>
     
   );
+  
   
 }
 
