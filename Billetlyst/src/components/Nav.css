@@ -13,8 +13,10 @@
 
 
 .nav-left {
-  flex: 1;
-  
+  float: left;
+  color: #646cff;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .logo {
