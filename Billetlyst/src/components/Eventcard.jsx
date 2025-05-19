@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import "../assets/styles/gameCard.scss";
 import { Link, useParams } from "react-router-dom";
 
-export default function CategoryCard({ item }) {
+
+export default function CategoryPage({ item }) {
   //const { slug } = useParams();
 
   return (
