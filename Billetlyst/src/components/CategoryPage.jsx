@@ -1,4 +1,4 @@
-import { useParams,Link } from "react-router";
+import { useParams, Link} from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
 import EventCard from "./EventCard";
