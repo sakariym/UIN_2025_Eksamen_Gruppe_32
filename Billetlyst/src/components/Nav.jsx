@@ -5,9 +5,11 @@ export default function Nav () {
 return (
     <nav className="navbar">
         <div className="nav-left">
+        <Link to="/">
             <h1 className="logo">
-                Billettlyst
+              Billettlyst      
             </h1>
+         </Link>
         </div>
 
         <div className="nav-center">
