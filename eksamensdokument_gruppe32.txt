@@ -8,7 +8,8 @@ Kilder: 1. Webtricks Blog. (u.å.). Komponenter og props – Introduksjon til Re
 2. React. (2023). Lists and keys. Hentet 19. mai 2025 fra https://legacy.reactjs.org/docs/lists-and-keys.html
 
 3. Remix Software. (2024). react-router-dom: Link. Hentet 19. mai 2025 fra https://api.reactrouter.com/v7/functions/react_router.Link.html
-
+4: https://chatgpt.com/c/682b149b-58c0-8002-93b8-aba9e262d0ad 
+5: React. (n.d.). Lists and keys – React. React. https://legacy.reactjs.org/docs/lists-and-keys.html
 
 
 Yassin Mukhtar Ibrahim - yassin1256
