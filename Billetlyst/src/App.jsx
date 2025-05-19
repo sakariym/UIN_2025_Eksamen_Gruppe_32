@@ -3,6 +3,7 @@ import {Route, Routes} from 'react-router-dom';
 import Home from './components/Home'
 import EventPage from './components/EventPage';
 import Dashboard from './components/Dashboard'
+import CategoryPage from './components/CategoryPage';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
 <Route path="/event/:id" element={<EventPage />} />
 
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/:category" element={<CategoryPage />} />
+
+
       </Routes>
     </>
   );
