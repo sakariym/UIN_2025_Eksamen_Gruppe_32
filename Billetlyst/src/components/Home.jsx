@@ -41,7 +41,7 @@ const FESTIVALS = [
     <>
     <Nav/>
       <h1>Billettlyst - Festivaler</h1>
-      <div className="event-card">
+      <div className="event-cards">
         {events.map(event => (
           <EventCard key={event.id} event={event} />
         ))}

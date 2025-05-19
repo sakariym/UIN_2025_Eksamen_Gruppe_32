@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 
 export default function EventCard ({event}) {
   return (
-< article classname ="event-card">
+< article className ="event-card">
   {/* Viser event-bilde fra API */}
 <img
 src={event.images?.[0]?.url}

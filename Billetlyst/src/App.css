@@ -18,6 +18,30 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+
+.event-cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.event-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding: 1rem;
+  
+}
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
