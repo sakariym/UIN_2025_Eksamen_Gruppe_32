@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import EventCard from "./EventCard";
 
 
-const API_KEY= "ZOKDUNG8B93mixzp5xx29XHsvuvzjLEb";
+const API_KEY= import.meta.env.VITE_API_KEY;
 
 const CATEGORY_MAP  ={
     musikk:"Music",

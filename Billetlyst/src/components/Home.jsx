@@ -11,7 +11,7 @@ function Home() {
   const [events, setEvents] = useState([]);
   const [artists, setArtists] = useState([]);
 
-  const API_KEY = "ZOKDUNG8B93mixzp5xx29XHsvuvzjLEb";
+  const API_KEY= import.meta.env.VITE_API_KEY;
 const FESTIVALS = [
   "Findings",
   "Neon",

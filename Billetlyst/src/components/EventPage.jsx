@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
 
-const API_KEY = 'ZOKDUNG8B93mixzp5xx29XHsvuvzjLEb';
+const API_KEY= import.meta.env.VITE_API_KEY;
 
 /* KILDE: Dokumentasjon og eksempler fra React Native + egen tilpasning 
 i denne linken:  https://reactnative.dev/docs/network*/ 
