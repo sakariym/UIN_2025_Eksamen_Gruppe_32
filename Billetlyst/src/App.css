@@ -42,6 +42,16 @@
 }
 
 
+.event-page-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding: 1rem;
+  
+}
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

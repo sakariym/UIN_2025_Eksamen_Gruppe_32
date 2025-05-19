@@ -29,21 +29,24 @@ function EventPage() {
   if (!event) return <p>Ingen event funnet.</p>;
 
   return (
-    <div>
+    <div className='event-page-card'>
       <h1>{event.name}</h1>
+            <img src={event.images?.[0]?.url} ></img>
         <p>Dato: {event.dates?.start?.localDate}</p>
-       <p>Lokasjon:{event._embedded?.venues?.[0]?.name}</p>
+        <p>Land: {event._embedded?.venues?.[0]?.country.name}</p>
+      <p>Venue: {event._embedded?.venues?.[0]?.name}</p>
+
+       <p>By: {event._embedded?.venues?.[0]?.city.name}</p>
       <p>{event.description || 'Ingen beskrivelse.'}</p>
+      <p>Billetter: {event.url}</p>
+      <p>Sjanger: {event.classifications?.[0]?.genre?.name}</p>
+                
+            
       <Link to="/">Tilbake til Hjem</Link>
     </div>
 
     
   );
-
-
-
-
-
 
 }
 
