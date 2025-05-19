@@ -6,13 +6,14 @@ import Dashboard from './components/Dashboard'
 import CategoryPage from './components/CategoryPage'
 
 
+
 function App() {
   
 return(
   <>
     <Routes>
     <Route path="/" element={<Home />}></Route>
-    <Route path="/eventPage" element={<EventPage />} />
+    <Route path="/eventpage" element={<EventPage />} />
     <Route path="/dashboard" element={<Dashboard />} />
     <Route path="/category/:slug" element={<CategoryPage />} />
 
