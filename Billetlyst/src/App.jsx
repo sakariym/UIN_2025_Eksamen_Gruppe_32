@@ -3,9 +3,7 @@ import {Route, Routes} from 'react-router-dom';
 import Home from './components/Home'
 import EventPage from './components/EventPage';
 import Dashboard from './components/Dashboard'
-import CategoryPage from './components/CategoryPage'
-
-
+import CategoryPage from './components/CategoryPage';
 
 function App() {
   
@@ -17,7 +15,11 @@ return(
     <Route path="/dashboard" element={<Dashboard />} />
     <Route path="/category/:slug" element={<CategoryPage />} />
 
-    </Routes>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/:category" element={<CategoryPage />} />
+
+
+      </Routes>
     </>
     )
 };
