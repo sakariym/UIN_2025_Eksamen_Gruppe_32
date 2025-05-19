@@ -2,14 +2,12 @@ import { useEffect } from "react";
 import "../assets/styles/gameCard.scss";
 import { Link, useParams } from "react-router-dom";
 
-
-export default function CategoryPage({ item }) {
-  //const { slug } = useParams();
-
+function EventCard ({ id, title}) {
   return (
-    <article className="gameCard">
-      <h3>{item.name}</h3>
-      <Link to={item.id}>Les mer {item.name}</Link>
-    </article>
-  );
+<div classname="event-card">
+<h3>{title}</h3>
+<Link to={`/event/${id}`}>Se detaljer</Link>
+</div>
+);
 }
+export default EventCard;
