@@ -1,6 +1,8 @@
 import { useParams, Link} from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
+import EventCard from "./EventCard";
+
 
 const API_KEY= "ZOKDUNG8B93mixzp5xx29XHsvuvzjLEb";
 
@@ -34,15 +36,12 @@ function CategoryPage() {
         {events.length === 0 ? (
           <p>Ingen eventer funnet.</p>
         ):(
-            <ul>
-            {events.map(event => (
-              <li key={event.id}>
-                <Link to={`/event/${event.id}`}>
-                  {event.name} - {event.dates?.start?.localDate}
-                </Link>
-              </li>
-            ))}
-            </ul>
+          <div className="card-container">
+  {events.map((event) => (
+    <EventCard key={event.id} event={event} />
+  ))}
+</div>
+
         )}
       </div>
     </>

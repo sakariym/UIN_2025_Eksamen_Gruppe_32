@@ -1,13 +1,24 @@
-import { useEffect } from "react";
-import "../assets/styles/gameCard.scss";
 import { Link, useParams } from "react-router-dom";
 
-function EventCard ({ id, title}) {
+export default function EventCard ({event}) {
   return (
-<div classname="event-card">
-<h3>{title}</h3>
-<Link to={`/event/${id}`}>Se detaljer</Link>
-</div>
-);
+< article classname ="event-card">
+  {/* Viser event-bilde fra API */}
+<img
+src={event.images?.[0]?.url}
+alt={event.name}
+style={{ width: "100%", borderRadius:"8px"}}
+/>
+{/* Viser kategori (genre) */}
+<p>{event.classifications?.[0]?.genre?.name}</p>
+{/* Viser event-navn */}
+<h3>{event.name}</h3>
+{/* Viser dato */}
+<p>{event.dates?.start?.localDate}</p>
+{/* Klikkbar lenke til EventPage */}
+<Link to={`/event/${event.id}`}>Se detaljer</Link>
+
+
+</article>
+  );
 }
-export default EventCard;

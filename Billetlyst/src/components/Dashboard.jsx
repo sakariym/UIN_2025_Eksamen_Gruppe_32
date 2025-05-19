@@ -1,7 +1,9 @@
+import Nav from './Nav';
 
 function Dashboard (){
     return (
        <div>
+       <Nav />
  <h1>Dashboard</h1>
  <h2>Logg Inn</h2>
  <form>
