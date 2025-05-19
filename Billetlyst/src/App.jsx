@@ -14,6 +14,7 @@ return(
     <Route path="/eventpage" element={<EventPage />} />
     <Route path="/dashboard" element={<Dashboard />} />
     <Route path="/category/:slug" element={<CategoryPage />} />
+<Route path="/event/:id" element={<EventPage />} />
 
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/:category" element={<CategoryPage />} />
