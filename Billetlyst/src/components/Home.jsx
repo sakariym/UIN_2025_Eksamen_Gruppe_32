@@ -1,17 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Nav from "./Nav";
 
-const API_KEY = "ZOKDUNG8B93mixzp5xx29XHsvuvzjLEb";
 
+
+
+
+function Home() {
+  const [events, setEvents] = useState([]);
+
+  const API_KEY = "ZOKDUNG8B93mixzp5xx29XHsvuvzjLEb";
 const FESTIVALS = [
   "Findings",
   "Neon",
   "Skeikampenfestivalen",
-  "Tons of Rock"
-];
+  "Tons of Rock"];
 
-function Home() {
-  const [events, setEvents] = useState([]);
+
+
+  
+
 
   useEffect(() => {
     Promise.all(
@@ -29,6 +37,8 @@ function Home() {
   }, []);
 
   return (
+    <>
+    <Nav/>
     <div>
       <h1>Billettlyst - Festivaler</h1>
       <ul>
@@ -41,7 +51,11 @@ function Home() {
         ))}
       </ul>
     </div>
+    </>
+    
   );
+  
 }
+
 
 export default Home;
